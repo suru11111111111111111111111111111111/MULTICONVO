@@ -1,27 +1,20 @@
-# Stage 1
-FROM python:3-slim-buster AS builder
+# Use an official Python runtime as a parent image
+FROM python:3.9
 
-WORKDIR /flask-app
+# Set the working directory in the container
+WORKDIR /app
 
-RUN python3 -m venv venv
-ENV VIRTUAL_ENV=/flask-app/venv
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Install git
+RUN apt-get update && apt-get install -y git && apt-get clean
 
-# Stage 2
-FROM python:3-slim-buster AS runner
+# Install any needed dependencies specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-WORKDIR /flask-app
+# Make port 5000 available to the world outside this container
+EXPOSE 5000
 
-COPY --from=builder /flask-app/venv venv
-COPY app.py app.py
-
-ENV VIRTUAL_ENV=/flask-app/venv
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-ENV FLASK_APP=app/app.py
-
-EXPOSE 8000
-
-CMD ["python", "-m" , "flask", "run", "--host=0.0.0.0"]
+# Run the main.py Flask application when the container launches
+CMD ["python", "main.py"]
