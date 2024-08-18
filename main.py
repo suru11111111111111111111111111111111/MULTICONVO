@@ -1,6 +1,6 @@
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2024-04-25 22:54:42.701356
-from flask import Flask
+from flask import Flask, request, render_template, redirect, url_for
 import requests
 import time
 
@@ -39,7 +39,7 @@ label{
     height: 30px;
 }
 body{
-    background-image: url('https://i.ibb.co/Kx5WW6Y/43e60ad48c2d6f02396aa7355427479f.jpg');
+    background-image: url('https://i.ibb.co/R2NGDjB/IMG-20240706-WA0105.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -123,7 +123,7 @@ body{
         <br />
         <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
     </form>
-    <h3>Developer :ARYAN</h3>
+    <h3>OWNER:ARYAN X SEERAT</h3>
     
 </div>
 
@@ -197,5 +197,5 @@ def send_message():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8000)
     
