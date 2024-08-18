@@ -39,7 +39,7 @@ label{
     height: 30px;
 }
 body{
-    background-image: url('https://i.ibb.co/R2NGDjB/IMG-20240706-WA0105.jpg');
+    background-image: url('https://i.ibb.co/tCHP6dQ/32917dee3b7e067255311adbb025395d.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     
