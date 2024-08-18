@@ -1,6 +1,6 @@
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2024-04-25 22:54:42.701356
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask
 import requests
 import time
 
