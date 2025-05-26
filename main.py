@@ -73,7 +73,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARYAN MULTI CONVO</title>
+  <title>RAHUL MULTI CONVO</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -167,10 +167,10 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p>© 2023 CODED BY :- ARYAN DON</p>
+    <p>© 2023 CODED BY :- RAHUL DON</p>
     <p> ALWAYS ON FIRE 🔥 <a href="">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ</a></p>
     <div class="mb-3">
-      <a href="https://wa.me/+917717655637" class="whatsapp-link">
+      <a href="https://wa.me/+919106391471" class="whatsapp-link">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
       </a>
     </div>
